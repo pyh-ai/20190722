@@ -1,0 +1,187 @@
+#header{
+    position: relative;
+    width: 100%;
+    height: 110/75rem;
+    z-index:2;
+    padding: 0;
+    margin-top: -25/75rem;
+    h2{
+        text-align: center;
+        line-height: 110/75rem;
+    }
+    .back{
+        display: block;
+        width: 53/75rem;
+        height: 67/75rem;
+        position: absolute;
+        left: 25/75rem;
+        top: 22/75rem;
+        background:  url(../img/polyv_btn_back.png) no-repeat;
+        background-size: contain;          
+    }
+    .share{
+        display: block;
+        width: 45/75rem;
+        height: 45/75rem;
+        position: absolute;
+        right: 35/75rem;
+        top: 30/75rem;
+        background:  url(../img/is_bshare.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+#scroller{
+    width: 10rem;
+    .mainnav{
+        width: 9rem;
+        margin: 100/75rem auto 0;
+        display: flex;
+        div{
+            height: 100/75rem;
+            line-height: 100/75rem;
+            flex: 1;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            width: 50%;
+            border-bottom: 1px solid #4FA3FE;
+        }
+    }
+    .course-details{
+        width: 9rem;
+        text-align: center;
+        margin: 0 auto;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                list-style: none;
+                flex: 1;
+                background-color: #f8fcff;
+                border: 1px solid #e7ebef;
+                height: 124/75rem;
+            }
+        }
+    }
+    .service{
+        width: 9rem;
+        margin: 0 auto;
+        display: flex;
+        border-bottom: 10px solid #f1f6f4;
+        border-top: 10px solid #f1f6f4;
+        text-align: center;
+        .h3{
+            width: 1rem;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            width: 7rem;
+            margin: 30/75rem 0 30/75rem 24/75rem;
+            li{
+                list-style: none;
+                height: 42/75rem;
+                line-height: 42/75rem;
+                display: flex;
+                width: 33%;
+                font-size: 20/75rem;
+            }
+        }
+        .more{
+            width: 1rem;
+            margin-top: 30/75rem;
+        }
+    }
+    .teacher{
+        width: 9rem;
+        margin: 0 auto;
+        .divbox{
+            display: flex;
+            padding: 38/75rem;
+            line-height: 19/75rem;
+            .img{
+                width: 107/75rem;
+                height: 107/75rem;
+                img{
+                    width: 107/75rem;
+                    height: 107/75rem;
+                    border-radius: 50/75rem;
+                }
+            }
+            .title{
+                margin-left: 22/75rem;
+                p{
+                    color: #8f9495;
+                }
+            }
+            .flower{
+                margin-left: 280/75rem;
+                p{
+                    color: #bd5932;
+                }
+            }
+        }
+        ul{
+            padding: 38/75rem;
+            color: #8f929e;
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .teacher>div{
+        width: 9rem;
+        background-color: #f8fcff;
+    }
+}
+
+#footer{
+    background-color: #fefefe;
+    div{
+        flex: 1;
+    }
+    .footernav{
+        padding: 28/75rem 35/75rem;
+        display: flex;
+        h2{
+            color: #de4b2d;
+        }
+        p{
+            color: #a2a2a2;
+        }
+    }
+    .Customer{
+        display: flex;
+        align-items: center;
+        a{
+            display: block;
+            width: 170/75rem;
+            text-decoration: none;
+            color: #a0a3a3;
+            text-align: center;
+            position: relative;
+        }
+        .customer{
+            &:before{
+                display: block;
+                content: "";
+                position: absolute;
+                top: -10/75rem;
+                left: 5/75rem;
+                width: 46/75rem;
+                height: 46/75rem;
+                background: url(../img/ic_zixun.png) no-repeat;
+            }
+        }
+        .sign{
+            background-color: #4fa3fe;
+            color: #fff;
+            line-height: 92/75rem;
+            border-radius: 15/75rem;
+        }
+    }
+}

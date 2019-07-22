@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/vue.js"></script>
+		<title></title>
+		<link rel="stylesheet" href="css/jobPath.css" />
+
+	</head>
+
+	<body>
+		<div id='box'>
+			<test></test>
+			<tubu></tubu>
+			<nou></nou>
+		</div>
+
+		<template id="mytemptobu">
+			<div id="box_01">
+				<a href="#"><img src="img/ic_home_title_left.png" class="now"></a>
+				<input type="text" :placeholder="msg" />
+				<span class="tow"><img src="img/ic_home_title_right.png"></span>
+				<ul>
+					<li>
+						<a href="index.html">推荐</a>
+					</li>
+					<li>
+						<a href="freeClass.html">免费课程</a>
+					</li>
+					<li>
+						<a href="#">职业路径</a>
+					</li>
+					<li>
+						<a href="zhibo.html">直播课程</a>
+					</li>
+				</ul>
+
+				<div class="box_2">
+					<img src="img/ic_career_path_head.png" />
+
+				</div>
+			</div>
+		</template>
+
+		<section>
+			<template id='san'>
+				<div class="box_3">
+					<ul>
+						<li v-for="item in arr">
+							<img :src="item.src" alt="" />
+							<h2>{{item.biaoti}}</h2>
+							<span class="one_1">{{item.id}} <strong>LEVEL</strong></span></br>
+							<span class="one_2">{{item.id1}} <strong>赏金</strong></span></br>
+							<span class="one_3">{{item.id2}} <strong>课时</strong></span></br>
+							<span class="one_4"><img :src="item.img1" alt=""><strong class="one_41">{{item.zhai}}</strong></span>
+						</li>
+					</ul>
+				</div>
+			</template>
+		</section>
+
+		<template id='mytemplate'>
+			<!--<div class="box">
+				<div class="nr">
+
+						<img src="img/i_main_home_activity.png" slot='normalImg'></br>
+						<span>首页</span>
+					
+				</div>
+				<div class="nr">
+					<a href="../../../问答页面-赖宇强/question.html">
+						<img src="img/i_main_qa.png" slot='normalImg'>
+						</br>
+						<span>问答</span>
+					</a>
+				</div>
+				<div class="nr">
+					<a href="../../../班级-潘懿衡/classes/classes.html">
+						<img src="img/i_main_class.png" slot='normalImg'></br>
+						<span>班级</span>
+					</a>
+				</div>
+				<div class="nr">
+					<a href="../../../我的-吕宇妮/创客学院/My.html">
+						<img src="img/i_main_mine.png" slot='normalImg'></br>
+						<span>我的</span>
+					</a>
+				</div>
+			</div>-->
+			<footer>
+				<div>
+					<ul>
+						<li>
+							<a href="index.html">
+								<p class="firstPic">
+									<img src="img/i_main_home.png" alt="" /></p>
+								<p class="secondPic">
+									<img src="img/i_main_home_activity.png" alt="" /></p>
+								<p class="zi">首页</p>
+							</a>
+						</li>
+						<li>
+							<a href="question.html">
+								<p class="firstPic">
+									<img src="img/i_main_qa.png" alt="" /></p>
+								<p class="secondPic">
+									<img src="img/i_main_qa_activity.png" alt="" /></p>
+								<p class="zi">问答</p>
+							</a>
+						</li>
+						<li>
+							<a href="classes.html">
+								<p class="firstPic">
+									<img src="img/i_main_class.png" alt="" /></p>
+								<p class="secondPic">
+									<img src="img/i_main_class_activity.png" alt="" /></p>
+								<p class="zi">班级</p>
+							</a>
+						</li>
+						<li>
+							<a href="My.html">
+								<p class="firstPic">
+									<img src="img/i_main_mine.png" alt="" /></p>
+								<p class="secondPic">
+									<img src="img/i_main_mine_activity.png" alt="" /></p>
+								<p class="zi">我的</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</template>
+	</body>
+	<script>
+		var nn = new Vue({
+			el: '#box',
+			data: {},
+			components: {
+				'test': {
+					template: '#mytemplate',
+				},
+				'tubu': {
+					template: '#mytemptobu',
+					data: function() {
+						return {
+							msg: "ajax.php.android"
+						}
+					},
+
+				},
+				'nou': {
+					template: '#san',
+					data: function() {
+						return {
+							arr: [{
+									src: 'img/未标题-3.jpg',
+									biaoti: '嵌入式工程师',
+									id: '34',
+									id1: '1260',
+									id2: '416',
+									img1: 'img/ic_all_student.png',
+									zhai: '2346在学'
+								},
+								{
+									src: 'img/未标题-1.jpg',
+									biaoti: '互联网工程师',
+									id: '35',
+									id1: '120',
+									id2: '546',
+									img1: 'img/ic_all_student.png',
+									zhai: '2356在学'
+								},
+								{
+									src: 'img/未标题-2.jpg',
+									biaoti: 'javaEE工程师',
+									id: '65',
+									id1: '160',
+									id2: '46',
+									img1: 'img/ic_all_student.png',
+									zhai: '246在学'
+								},
+								{
+									src: 'img/未标题-4.jpg',
+									biaoti: 'WEB全栈工程师',
+									id: '75',
+									id1: '1470',
+									id2: '566',
+									img1: 'img/ic_all_student.png',
+									zhai: '1346在学'
+								},
+								{
+									src: 'img/未标题-5.jpg',
+									biaoti: 'VR/AR工程师',
+									id: '347',
+									id1: '1330',
+									id2: '256',
+									img1: 'img/ic_all_student.png',
+									zhai: '2646在学'
+								},
+								{
+									src: 'img/未标题-6.jpg',
+									biaoti: 'Android工程师',
+									id: '344',
+									id1: '120',
+									id2: '316',
+									img1: 'img/ic_all_student.png',
+									zhai: '2866在学'
+								},
+								{
+									src: 'img/未标题-7.jpg',
+									biaoti: 'ios工程师',
+									id: '63',
+									id1: '1160',
+									id2: '876',
+									img1: 'img/ic_all_student.png',
+									zhai: '3446在学'
+								},
+								{
+									src: 'img/123.jpg',
+									biaoti: 'UI/UE工程师',
+									id: '81',
+									id1: '1220',
+									id2: '356',
+									img1: 'img/ic_all_student.png',
+									zhai: '6666在学'
+								},
+							]
+						}
+					}
+				}
+			}
+		})
+	</script>
+
+</html>

@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.classes-header {
+  width: 100%;
+}
+.classes-header .top {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+.classes-header .top .main {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 0.35rem;
+}
+.classes-header .top .main span {
+  font-weight: normal;
+  position: absolute;
+  right: 10px;
+}
+.classes-header .main {
+  width: 100%;
+  position: relative;
+}
+.classes-header .main .banner img {
+  width: 100%;
+}
+.classes-header .main .course {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  top: 5rem;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
+}
+.classes-header .main .course .aa {
+  width: 1px;
+  height: 3rem;
+  border-left: 1px solid black;
+}
+.classes-header .main .course .button {
+  text-align: center;
+  position: relative;
+}
+.classes-header .main .course .button span {
+  width: 80%;
+  position: absolute;
+  top: 0.2rem;
+  font-size: 0.35rem;
+  color: gray;
+}
+.classes-header .main .course .button img {
+  width: 80%;
+}
+.classes-header .main .course > div {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.classes-header .main .course > div .icon {
+  text-align: center;
+}
+.classes-header .main .course > div .icon img {
+  width: 1.3rem;
+}
+.classes-section {
+  width: 100%;
+}
+.classes-section > .main {
+  margin-top: 1.5rem;
+}
+.classes-section > .main .back {
+  position: absolute;
+  left: 0;
+}
+.classes-section > .main .back img {
+  z-index: 1;
+  width: 0.5rem;
+}
+.classes-section > .main .back2 {
+  position: absolute;
+  right: 0;
+}
+.classes-section > .main .back2 img {
+  z-index: 1;
+  width: 0.5rem;
+}
+.classes-section > .main > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.classes-section > .main > div .icon {
+  margin-top: 0.45rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.classes-section > .main > div .icon img {
+  width: 1.5rem;
+}
+.classes-section > .main > div .title {
+  margin-top: 0.5rem;
+  font-size: 0.35rem;
+  text-align: center;
+  width: 5.5rem;
+}
+.classes-section > .main > div .title span {
+  text-align: left;
+  margin-top: 0.3rem;
+  display: inline-block;
+  line-height: 18px;
+  font-size: 0.28rem;
+  color: #808080;
+}
+.classes-section > .main .title {
+  font-size: 0.5rem;
+}
+.classes-section > .main .title > div p {
+  width: 100%;
+}
+.classes-section > .main .title > div p span {
+  color: #238ffe;
+}
+.classes-section .query {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.classes-section .query a {
+  font-size: 0.3rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #448df6;
+}
+
+
+footer div {
+  height: 1.49333333rem;
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer ul {
+  margin-top: 0.33333333rem;
+  display: flex;
+}
+footer ul li {
+  display: block;
+  width: 25%;
+  flex: 1;
+  text-align: center;
+}
+footer ul li p img {
+  width: 0.53333333rem;
+}
+footer ul li .firstPic {
+  display: block;
+}
+footer ul li .secondPic {
+  display: none;
+}
+footer ul li:hover p {
+  color: #3997fe;
+}
+footer ul li:hover .secondPic {
+  display: block;
+}
+footer ul li:hover .firstPic {
+  display: none;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>我的</title>
+		<link rel="stylesheet" type="text/css" href="css/My.css" />
+		<script type="text/javascript" src="lib/flexible.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="box">
+			<myheader></myheader>
+			<div class="div"></div>
+			<mycontent src1="img/ic_my_studycard.png" title="学习卡"></mycontent>
+			<mycontent src1="img/ic_my_live.png" title="我的公开课"></mycontent>
+			<mycontent src1="img/ic_my_qa.png" title="我的问答"></mycontent>
+			<mycontent src1="img/ic_my_order.png" title="我的订单"></mycontent>
+			<mycontent src1="img/ic_my_history.png" title="浏览历史"></mycontent>
+			<mycontent src1="img/ic_my_setting.png" title="系统设置"></mycontent>
+
+		</div>
+		<!--头部-->
+		<template id="myheader">
+			<div class="header">
+				<div class="login">
+					<a href="Login.html">登录/注册</a>
+					<p><img src="img/pen.png" /><i>成就更好未来</i></p>
+					<a href="Login.html"><img src="img/avatar_default.png"></a>
+				</div>
+				<div class="topbar">
+					<div class="item">
+						<img src="img/ic_my_class.png" />
+						<br />
+						<span>班级</span>
+					</div>
+					<div class="item">
+						<img src="img/ic_my_download.png" />
+						<br />
+						<span>离线</span>
+					</div>
+					<div class="item">
+						<img src="img/ic_my_msg.png" />
+						<br />
+						<span>消息</span>
+					</div>
+					<div class="item">
+						<img src="img/ic_my_wechat.png" />
+						<br />
+						<span>微信</span>
+					</div>
+				</div>
+			</div>
+		</template>
+		<!--中间内容-->
+		<template id="mycontent">
+			<div class="content">
+				<ul>
+					<li>
+						<a class="pic" href="#"><img :src="src1" /></a>
+						<a href="#"><span>{{title}}</span></a>
+					</li>
+				</ul>
+			</div>
+		</template>
+		<!--底部-->
+		<footer>
+			<div>
+				<ul>
+					<li>
+						<a href="index.html">
+							<p class="firstPic"><img src="img/i_main_home.png"></p>
+							<p class="secondPic"><img src="img/i_main_home_activity.png" /></p>
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="question.html">
+							<p class="firstPic"><img src="img/i_main_class.png" alt="" /></p>
+							<p class="secondPic"><img src="img/i_main_class_activity.png" alt="" /></p>
+							<p>问答</p>
+						</a>
+					</li>
+					<li>
+						<a href="classes.html">
+							<p class="firstPic"><img src="img/i_main_class.png" alt="" /></p>
+							<p class="secondPic"><img src="img/i_main_class_activity.png" alt="" /></p>
+							<p>班级</p>
+						</a>
+					</li>
+					<li>
+						<a href="My.html">
+							<p class="firstPic"><img src="img/i_main_home.png" alt="" /></p>
+							<p class="secondPic"><img src="img/i_main_home_activity.png" alt="" /></p>
+							<p>我的</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<template id="tabbar">
+			<div class="tab">
+
+				<div class="item">
+					<img src="images/i_main_home.png" />
+					<br />
+					<span>首页</span>
+				</div>
+
+
+				<div class="item">
+					<img src="images/i_main_qa.png" />
+					<br />
+					<span>问答</span>
+				</div>
+
+				<div class="item">
+					<img src="images/i_main_class.png" />
+					<br />
+					<span>班级</span>
+				</div>
+
+				<div class="item">
+					<img src="images/i_main_mine.png" />
+					<br />
+					<span>我的</span>
+				</div>
+
+			</div>
+		</template>
+		<script>
+			var vm = new Vue({
+				el: '#box',
+				data: {},
+				components: {
+					//头部
+					"myheader": {
+						template: "#myheader",
+					},
+					//					//底部
+					//					"mytabbar":{
+					//						template:"#tabbar"
+					//					},
+					//中间内容
+					"mycontent": {
+						props: ['title', 'src1', 'curr', 'mark'],
+						template: '#mycontent',
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

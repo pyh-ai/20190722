@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/vue.js"></script>
+		<title></title>
+		<link rel="stylesheet" href="css/zhibo.css" />
+
+	</head>
+
+	<body>
+		<div id='box'>
+			<test></test>
+			<tubu></tubu>
+			<three></three>
+		</div>
+
+		<template id="mytemptobu">
+			<div id="box_01">
+				<a href="#"><img src="img/ic_home_title_left.png" class="now"></a>
+				<input type="text" :placeholder="msg" />
+				<span class="tow"><img src="img/ic_home_title_right.png"></span>
+				<ul>
+					<li>
+						<a href="index.html">推荐</a>
+					</li>
+					<li>
+						<a href="freeClass.html">免费课程</a>
+					</li>
+					<li>
+						<a href="jobPath.html">职业路径</a>
+					</li>
+					<li @click="fn()" :class="{colorred:flag}">
+						<a href="zhibo.html">直播课程</a>
+					</li>
+				</ul>
+				<div class="box_2">
+					<ul>
+						<li>
+							<p class="yanshi">
+								<a href="#">全部</a>
+							</p>
+						</li>
+						<li>
+							<p class="yanshi1">
+								<a href="#">未开始</a>
+							</p>
+						</li>
+						<li>
+							<p class="yanshi2">
+								<a href="#">已结束</a>
+							</p>
+						</li>
+						<li class="tupian">
+							<a href="#"><img src="img/ic_fillter.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</template>
+
+		<section>
+			<template id="tt">
+				<div class="box_4">
+					<ul>
+						<li v-for='ietm in arr1'>
+							<img :src="ietm.src" />
+							<h2>{{ietm.dai}}</h2>
+							<span class="one_1">{{ietm.sj}}</span>
+							<span class="two_1">{{ietm.laoshi}}</span>
+							<span class="three_1">{{ietm.ks}}</span>
+						</li>
+					</ul>
+				</div>
+			</template>
+		</section>
+
+		<template id='mytemplate'>
+			<!--<div class="box">
+				<div class="nr">
+					<a href="">
+						<img src="img/i_main_home_activity.png" slot='normalImg'></br>
+						<span>首页</span>
+					</a>
+				</div>
+				<div class="nr">
+					<a href="../../../问答页面-赖宇强/question.html">
+						<img src="img/i_main_qa.png" slot='normalImg'>
+						</br>
+						<span>问答</span>
+					</a>
+				</div>
+				<div class="nr">
+					<a href="../../../班级-潘懿衡/classes/classes.html">
+						<img src="img/i_main_class.png" slot='normalImg'></br>
+						<span>班级</span>
+					</a>
+				</div>
+				<div class="nr">
+					<a href="../../../我的-吕宇妮/创客学院/My.html">
+						<img src="img/i_main_mine.png" slot='normalImg'></br>
+						<span>我的</span>
+					</a>
+				</div>
+				
+			</div>-->
+			<footer>
+				<div>
+					<ul>
+						<li>
+							<a href="index.html">
+								<p class="firstPic"><img src="img/i_main_home.png" alt="" /></p>
+								<p class="secondPic"><img src="img/i_main_home_activity.png" alt="" /></p>
+								<p>首页</p>
+								</a>
+						</li>
+						<li>
+							<a href="question.html">
+								<p class="firstPic"><img src="img/i_main_qa.png" alt="" /></p>
+								<p class="secondPic"><img src="img/i_main_qa_activity.png" alt="" /></p>
+								<p>问答</p>
+							</a>
+						</li>
+						<li>
+							<a href="classes.html">
+								<p class="firstPic"><img src="img/i_main_class.png" alt="" /></p>
+								<p class="secondPic"><img src="img/i_main_class_activity.png" alt="" /></p>
+								<p>班级</p>
+							</a>
+						</li>
+						<li>
+							<a href="My.html">
+								<p class="firstPic"><img src="img/i_main_mine.png" alt="" /></p>
+								<p class="secondPic"><img src="img/i_main_mine_activity.png" alt="" /></p>
+								<p>我的</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</template>
+	</body>
+	<script>
+		var nn = new Vue({
+			el: '#box',
+			data: {},
+			components: {
+				'test': {
+					template: '#mytemplate',
+				},
+				'tubu': {
+					template: '#mytemptobu',
+					data: function() {
+						return {
+							msg: "ajax.php.android"
+						}
+					},
+					methods: {
+						fn() {
+
+						}
+					}
+
+				},
+				'three': {
+					template: '#tt',
+					data: function() {
+						return {
+							arr1: [{
+									src: 'img/image_user.png',
+									dai: '设计的启蒙--从字体的设计开始',
+									sj: '06月.21日：19.20',
+									laoshi: '小明老师',
+									ks: '未开始'
+								},
+								{
+									src: 'img/image_user.png',
+									dai: 'zigbee+stm32然后打造智慧教室项目',
+									sj: '03月.24日：13.42',
+									laoshi: '小红老师',
+									ks: '未开始'
+								},
+								{
+									src: 'img/login_icon_photo.png',
+									dai: '搞懂这6步，让你的logo拥有灵魂',
+									sj: '07月.14日：21.27',
+									laoshi: '小刚老师',
+									ks: '开始了'
+								},
+								{
+									src: 'img/image_user.png',
+									dai: '超干货，90分钟教你做出高水准字体海报',
+									sj: '08月.14日：21.31',
+									laoshi: '张三老师',
+									ks: '未开始'
+								},
+								{
+									src: 'img/login_icon_photo.png',
+									dai: '设计的启蒙--从字体的设计开始',
+									sj: '08月.04日：18.30',
+									laoshi: '小兰老师',
+									ks: '开始了'
+								},
+								{
+									src: 'img/image_user.png',
+									dai: 'zigbee+stm32然后打造智慧教室项目',
+									sj: '4月.13日：12.22',
+									laoshi: '小美老师',
+									ks: '未开始'
+								},
+								{
+									src: 'img/user_image.png',
+									dai: '超干货，90分钟教你做出高水准字体海报',
+									sj: '09月.12日：20.10',
+									laoshi: '李四老师',
+									ks: '开始了'
+								},
+								{
+									src: 'img/image_user.png',
+									dai: '设计的启蒙--从字体的设计开始',
+									sj: '07月.11日：05.33',
+									laoshi: '王五老师',
+									ks: '未开始'
+								},
+								{
+									src: 'img/user_image.png',
+									dai: '搞懂这6步，让你的logo拥有灵魂',
+									sj: '05月.24日：21.38',
+									laoshi: '王麻子老师',
+									ks: '未开始'
+								},
+								{
+									src: 'img/image_user.png',
+									dai: '设计的启蒙--从字体的设计开始',
+									sj: '11月.04日：06.10',
+									laoshi: '陈桥老师',
+									ks: '开始了'
+								},
+
+							]
+						}
+					}
+				}
+			}
+		})
+	</script>
+
+</html>

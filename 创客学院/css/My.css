@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+#box {
+  width: 100%;
+}
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: 5rem;
+}
+.header .login {
+  margin-top: 1.5rem;
+}
+.header .login img {
+  position: absolute;
+  right: .6rem;
+  top: .3rem;
+}
+.header .login a {
+  color: #000;
+  font-family: "微软雅黑";
+  margin: 1rem 1rem;
+}
+.header .login p {
+  color: #666;
+  margin: .1rem 1rem;
+}
+.header .login p i {
+  margin-left: .3rem;
+  font-style: normal;
+}
+.header .login p img {
+  width: .5rem;
+  height: .5rem;
+  position: relative;
+  left: 0rem;
+  top: 0rem;
+}
+.header .topbar {
+  position: relative;
+  top: 0rem;
+  display: flex;
+  width: 100%;
+}
+.header .topbar .item {
+  flex: 1;
+  text-align: center;
+}
+.header .topbar .item span {
+  color: #666;
+}
+.header .topbar .item img {
+  width: 1rem;
+  height: 1rem;
+}
+#box .div {
+  background: whitesmoke;
+  width: 100%;
+  height: .5rem;
+}
+.content {
+  z-index: 2;
+}
+.content li {
+  line-height: 1.8rem;
+  border-bottom: 1px solid #ccc;
+  background: url(../img/i_more.png) no-repeat;
+  background-position: 9.4rem;
+}
+.content li img {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  left: .6rem;
+  top: .4rem;
+}
+.content li a {
+  color: #000;
+}
+.content li a span {
+  position: relative;
+  left: 1rem;
+}
+footer div {
+  height: 1.49333333rem;
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer ul {
+  margin-top: 0.33333333rem;
+  display: flex;
+}
+footer ul li {
+  display: block;
+  width: 25%;
+  flex: 1;
+  text-align: center;
+}
+footer ul li p img {
+  width: 0.53333333rem;
+}
+footer ul li .firstPic {
+  display: block;
+}
+footer ul li .secondPic {
+  display: none;
+}
+footer ul li:hover p {
+  color: #3997fe;
+}
+footer ul li:hover .secondPic {
+  display: block;
+}
+footer ul li:hover .firstPic {
+  display: none;
+}

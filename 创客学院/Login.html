@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/Login.css"/>
+		<script type="text/javascript" src="lib/flexible.js"></script>
+		<script type="text/javascript" src="lib/iscroll.js"></script>
+		<script type="text/javascript" src="lib/zepto.js"></script>
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<div id="header">
+			<header class="head-top">
+				<div class="go-back">
+					<a href="My.html">
+						<i class="goback-icon"></i>
+					</a>
+				</div>
+				<div class="title">
+					<h4>登录</h4>
+				</div>
+				<div class="register">
+					<a href="register.html">注册</a>
+				</div>
+			</header>
+		</div>
+		<!--内容-->
+		<div id="wrapper">
+			<div id="scroller">
+				<!--登录表单-->
+				<form action="#">
+					<div class="login clearfix">
+						<ul>
+							<li class="inp">
+								<i class="login-pic"><img src="img/sign_icon_phone01.png"><i>
+								<input id="username" type="text" placeholder="用户名/手机号"><a href="#" class="clear"></a>
+							</li>
+							<li class="inp pw">
+								<i class="login-pw"><img src="img/sign_icon_lock01.png"></i>
+								<input id="password" type="password" placeholder="输入密码"><a href="#" class="clear"></a>
+								<a href="#" data-show="1" class="change " style="display: block;"></a>
+							</li>	
+						</ul>
+						
+						<div class="login-btn">
+							<button class="submit" type="submit">登录</button>
+						</div>
+						
+						<div class="login-qes">
+	            			<a href="#">忘记密码</a>
+            			</div>
+						
+					</div>
+				</form>
+				<!--第三方登录-->
+				<div class="footer">
+					<span>第三方登录</span>
+					<ul>
+						<li>
+							<a href="#"><img src="img/weixin.png"></a>
+							<p>微信</p>
+						</li>
+						<li>
+							<a href="#"><img src="img/qq.png"></a>
+							<p>QQ</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

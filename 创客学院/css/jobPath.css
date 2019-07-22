@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+	text-decoration: none;
+	color: black;
+}
+body {
+  background-color: #f0f4f7;
+}
+#box {
+  height: 74rem;
+}
+footer div {
+  height: 3.49333333rem;
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer ul {
+  margin-top: 0.33333333rem;
+  display: flex;
+}
+footer ul li {
+  display: block;
+  width: 25%;
+  flex: 1;
+  text-align: center;
+}
+footer ul li p img {
+  width: 1.53333333rem;
+}
+footer ul li .firstPic {
+  display: block;
+}
+footer ul li .secondPic {
+  display: none;
+}
+footer ul li:hover p {
+  color: #3997fe;
+}
+footer ul li:hover .secondPic {
+  display: block;
+}
+footer ul li:hover .firstPic {
+  display: none;
+}
+footer ul li .zi {
+  text-decoration: none;
+}
+#box_01 {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  background: #ffffff;
+}
+#box_01 img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#box_01 input {
+  width: 16rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  line-height: 3rem;
+  text-indent: 2rem;
+  margin-left: 3.5rem;
+  margin-top: 0.5rem;
+  background-color: #efefef;
+}
+#box_01 ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 1.5rem;
+}
+#box_01 li {
+  list-style: none;
+}
+#box_01 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#box_01 .box_2 img {
+  width: 100%;
+  height: 8rem;
+}
+#box_01 .now {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+}
+#box_01 .tow {
+  position: absolute;
+  right: 1rem;
+  top: 0.6rem;
+}
+.box_3 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box_3 ul li {
+  list-style: none;
+  width: 46%;
+  margin-left: 0.8rem;
+  height: 12rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: -1rem;
+  margin-top: 3rem;
+}
+.box_3 ul li img {
+  width: 100%;
+}
+.box_3 ul li h2 {
+  font-size: 1rem;
+}
+.box_3 ul li span {
+  font-size: 0.8rem;
+}
+.box_3 ul li span img {
+  width: 4rem;
+  margin-left: -3rem;
+}
+.box_3 ul li .one_1 {
+  width: 2rem;
+  display: block;
+  height: 1.5rem;
+  margin-left: 1rem;
+  border-right: 1px solid #777;
+  padding-right: 0.5rem;
+  margin-top: 0.4rem;
+}
+.box_3 ul li .one_2 {
+  width: 2rem;
+  display: block;
+  height: 1.5rem;
+  margin-left: 4.5rem;
+  border-right: 1px solid #777;
+  padding-right: 0.5rem;
+  margin-top: -2.6rem;
+}
+.box_3 ul li .one_3 {
+  width: 2rem;
+  display: block;
+  height: 1.5rem;
+  margin-left: 7.5rem;
+  border-right: 1px solid #777;
+  padding-right: 0.5rem;
+  margin-top: -2.6rem;
+}
+.box_3 ul li .one_4 .one_41 {
+  display: block;
+  margin-top: -1.5rem;
+  margin-left: 5rem;
+  color: #999;
+}

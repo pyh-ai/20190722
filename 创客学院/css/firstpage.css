@@ -1,0 +1,236 @@
+
+			*{
+			    margin: 0;
+			    padding: 0;
+			}
+			
+			footer a{
+				color:black;
+			}
+			footer .footer {
+			  
+			  height: 1.49333333rem;
+			  background: #ffffff;
+			  width: 100%;
+			  position: fixed;
+			  bottom: 0;
+			}
+			footer .footer ul {
+			  margin-top: 0.33333333rem;
+			  display: flex;
+			}
+			footer .footer ul li {
+			  display: block;
+			  width: 25%;
+			  flex: 1;
+			  text-align: center;
+			}
+			footer .footer ul li p img {
+			  width: 0.53333333rem;
+			}
+			footer .footer ul li .firstPic {
+			  display: block;
+			}
+			footer .footer ul li .secondPic {
+			  display: none;
+			}
+			footer .footer ul li:hover p {
+			  color: #3997fe;
+			}
+			footer .footer ul li:hover .secondPic {
+				
+			  display: block;
+				
+			}
+			footer .footer ul li:hover .firstPic {
+			  display: none;
+			}
+			img{
+			    border:0;
+			}
+			ol, ul ,li{list-style: none;} 
+			.header{
+				width: 100%;
+				border: 2px solid #999;
+				position: fixed;
+				top: 0;
+				z-index: 100;
+				background: white;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			.header .top{
+				width: 100%;
+				height: 50px;
+				
+
+			}
+			.header input{
+				width: 70%;
+				height: 35px;
+				border-radius: 16px;
+				text-align: center;
+				border: none;
+				background: gainsboro;
+				outline: none;
+				
+				
+			}	
+			.header .top a img{
+				width: 30px;
+				border-radius: 10px;
+			}
+			.header .nav-top{
+				display: flex;
+				text-align: center;
+				line-height: 36px;
+			}
+			.header .nav-top .navbar{
+				flex: 1;
+				font-weight: bold;
+				font-size: 16px;
+				margin: 15px 0;
+			}
+			section{
+				position: relative;
+				top:136px;
+			}
+			.swiper-container {
+				z-index: 90;
+			    width: 90%;
+			    height: 120px;
+			   
+			} 
+			.swiper-container img{
+				width: 100%;
+				 height: 120px;
+			}
+			.navbar:first-child a{
+				color: blue;
+			}
+			section .title{
+				width: 90%;
+				line-height: 60px;
+				overflow: hidden;
+				margin: 0 auto;
+				position:relative;
+				background-image: url(image/rectangle.png)no-repeat;
+			}
+			section .title  a {
+				display: block;
+				width: 60px;
+				float: right;
+				font-size: 14px;
+			}
+			
+			section .title i{
+				position: absolute;
+				right: 0;
+				top: 11px;}
+			section .title span a{
+				font-size: 18px;
+				font-weight: bold;
+				float:left;
+				display: block;
+				width: 120px;
+			}
+			section .tp{
+				width: 90%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				height: 100px;
+			}
+			section .tp img{
+				border-radius: 6px;
+				width: 48%;
+				float: left;
+				
+			}
+			section .cont{
+				  width: 100%;
+			    height: 120px;
+			    border: 1px solid #999999;
+			    border-radius: 5px;
+			    overflow: hidden;
+			    padding: 15px 10px;
+			    box-sizing: border-box;
+			    line-height: 38px;
+			    position: absolute;
+			}
+			section .cont:first-child div{
+				width: 50%;
+			}
+			section .cont p{
+				font-weight: bold;
+			}
+			section .cont:last-child img{
+				width: 20%;
+				float: right;
+				position: absolute;
+				top: 0;
+				right: 10px;
+			}
+			.swiper-container3{
+				height: auto;
+				
+			}
+			section .contLeft,.contRight{
+				display: flex;
+				flex-direction: column;
+			}
+			section .item{
+				margin-top: 28px;
+				overflow: hidden;
+				line-height: 36px;
+				outline: none;
+			}
+			.titlel1,.tp1,.swiper3{
+				width:100% ;
+			}
+			section .item img{
+				width: 38%;
+				margin-right: 20px;
+				float: left;
+			}
+			section .item span{
+				margin-right: 20px;
+				color: gray;
+			}
+			section .item .last{
+				color: black;
+			}
+			footer{
+				border:1px solid #999;
+				display: flex;
+				position: fixed;
+				bottom: 0;
+				text-align: center;
+				width: 100%;
+				padding: 0 10px;
+				z-index: 100;
+				background: white;
+			}
+			footer a{
+				display: block;
+				width: 100%;
+				text-decoration: none;
+			}
+			footer .item{
+
+				flex: 1;
+				justify-content: space-around;
+			}
+			footer .item img{
+				width: 40px;
+
+			}
+			footer .item span{
+				display: block;
+				color: #666;
+			}
+		footer:first-child a{
+		  	color: skyblue;
+		  }

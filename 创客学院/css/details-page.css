@@ -1,0 +1,323 @@
+#header {
+  position: relative;
+  width: 100%;
+  height: 1.46666667rem;
+  z-index: 2;
+  padding: 0;
+  margin-top: -0.33333333rem;
+}
+#header .back {
+  display: block;
+  width: 0.70666667rem;
+  height: 0.89333333rem;
+  position: absolute;
+  left: 0.33333333rem;
+  top: 0.29333333rem;
+  background: url(../img/polyv_btn_back.png) no-repeat;
+  background-size: contain;
+}
+#header .share {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  right: 0.46666667rem;
+  top: 0.4rem;
+  background: url(../img/is_bshare.png) no-repeat;
+  background-size: contain;
+}
+#scroller {
+  width: 10rem;
+}
+#scroller .coursebox {
+  margin: 1.33333333rem auto 0;
+  width: 9rem;
+}
+#scroller .coursebox .course {
+  color: #fff;
+  background-color: #1dd0cf;
+  border: none;
+  outline: none;
+  line-height: 0.66666667rem;
+  width: 1.86666667rem;
+  border-radius: 0.33333333rem;
+  font-size: 0.33333333rem;
+}
+#scroller .coursebox p {
+  font-size: 0.34666667rem;
+}
+#scroller .experience {
+  width: 9rem;
+  margin: 0 auto;
+  padding: 0.66666667rem;
+  text-align: center;
+}
+#scroller .experience ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#scroller .experience ul li {
+  list-style: none;
+  width: 44%;
+  background-color: gainsboro;
+  border-radius: 0.13333333rem;
+  margin: 0.26666667rem 0 0 0.26666667rem;
+}
+#scroller .experience ul li img {
+  margin: 0.2rem;
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+}
+#scroller .curriculum {
+  width: 9rem;
+  margin: 0 auto;
+  background-color: #f9fdfc;
+}
+#scroller .curriculum .chapter {
+  margin-left: 0.26666667rem;
+}
+#scroller .curriculum ul {
+  margin-left: 0.53333333rem;
+}
+#scroller .curriculum ul li:nth-child(1) a {
+  color: #000000;
+}
+#scroller .curriculum ul li:nth-child(1) a:before {
+  display: block;
+  content: '';
+  width: 0.56rem;
+  height: 0.56rem;
+  background: url(../img/ic_shiting.png) no-repeat;
+  position: absolute;
+  top: 0.26666667rem;
+  right: 0;
+}
+#scroller .curriculum ul li:nth-child(2) a:before {
+  display: block;
+  content: '';
+  width: 0.56rem;
+  height: 0.56rem;
+  background: url(../img/ic_shiting.png) no-repeat;
+  position: absolute;
+  top: 0.26666667rem;
+  right: 0;
+}
+#scroller .curriculum ul li:nth-child(2) a {
+  color: #000000;
+}
+#scroller .curriculum ul li {
+  list-style: none;
+  line-height: 1.06666667rem;
+  border-bottom: 1px solid #dfe1e0;
+  position: relative;
+}
+#scroller .curriculum ul li a {
+  text-decoration: none;
+  color: #6d6f6f;
+  margin-left: 0.8rem;
+}
+#scroller .curriculum ul li:before {
+  display: block;
+  content: '';
+  width: 0.56rem;
+  height: 0.56rem;
+  background: url(../img/video_icon_play.png) no-repeat;
+  position: absolute;
+  top: 0.26666667rem;
+  left: 0;
+}
+#scroller .course-details {
+  width: 9rem;
+  text-align: center;
+  margin: 1.38666667rem auto 0;
+}
+#scroller .course-details ul {
+  display: flex;
+  align-items: center;
+}
+#scroller .course-details ul li {
+  list-style: none;
+  flex: 1;
+  background-color: #f8fcff;
+  border: 1px solid #e7ebef;
+  height: 1.65333333rem;
+}
+#scroller .service {
+  width: 9rem;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 10px solid #f1f6f4;
+  border-top: 10px solid #f1f6f4;
+  text-align: center;
+}
+#scroller .service .h3 {
+  width: 1rem;
+}
+#scroller .service ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 7rem;
+  margin: 0.4rem 0 0.4rem 0.32rem;
+}
+#scroller .service ul li {
+  list-style: none;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  display: flex;
+  width: 33%;
+  font-size: 0.26666667rem;
+}
+#scroller .service .more {
+  width: 1rem;
+  margin-top: 0.4rem;
+}
+#scroller .teacher {
+  width: 9rem;
+  margin: 0 auto;
+}
+#scroller .teacher .divbox {
+  display: flex;
+  padding: 0.50666667rem;
+  line-height: 0.25333333rem;
+}
+#scroller .teacher .divbox .img {
+  width: 1.42666667rem;
+  height: 1.42666667rem;
+}
+#scroller .teacher .divbox .img img {
+  width: 1.42666667rem;
+  height: 1.42666667rem;
+  border-radius: 0.66666667rem;
+}
+#scroller .teacher .divbox .title {
+  margin-left: 0.29333333rem;
+}
+#scroller .teacher .divbox .title p {
+  color: #8f9495;
+}
+#scroller .teacher .divbox .flower {
+  margin-left: 3.73333333rem;
+}
+#scroller .teacher .divbox .flower p {
+  color: #bd5932;
+}
+#scroller .teacher ul {
+  padding: 0.50666667rem;
+  color: #8f929e;
+}
+#scroller .teacher ul li {
+  list-style: none;
+}
+#scroller .teacher > div {
+  width: 9rem;
+  background-color: #f8fcff;
+}
+#scroller .comments {
+  width: 9rem;
+  margin: 0.73333333rem auto;
+}
+#scroller .comments .commentst {
+  display: flex;
+  line-height: 0.66666667rem;
+  align-items: center;
+}
+#scroller .comments .commentst .commentst-right {
+  flex: 1;
+  height: 0.66666667rem;
+}
+#scroller .comments .commentst .commentst-right .commentst-num {
+  width: 2rem;
+  background-color: #daf4fc;
+  border: 1px solid #c6dde8;
+  border-radius: 0.33333333rem;
+  text-align: center;
+  color: #4985be;
+  margin-left: 4.93333333rem;
+}
+#scroller .comments .commentstitle {
+  display: flex;
+  margin: 0.66666667rem 0 0 0;
+}
+#scroller .comments .commentstitle .num {
+  color: #f79e31;
+  font-size: 0.73333333rem;
+}
+#scroller .comments .commentslist {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.66666667rem 0 0 0;
+  background-color: #f8fafc;
+  padding: 0.4rem;
+  border-radius: 0.13333333rem;
+}
+#scroller .comments .commentslist .commentsimg {
+  display: flex;
+}
+#scroller .comments .commentslist .commentsimg img {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  margin-left: 0.4rem;
+}
+#scroller .comments .commentslist .commentsimg p {
+  margin-left: 0.53333333rem;
+  font-weight: bold;
+  font-size: 0.33333333rem;
+}
+#scroller .comments .commentslist .evaluation {
+  text-align: right;
+}
+#scroller .comments .commentslist .evaluation p {
+  color: #9b9b9e;
+}
+#scroller .comments .commentslist > div {
+  flex: 1;
+}
+#scroller .comments .commentstitle > div {
+  flex: 1;
+  height: 1.33333333rem;
+  text-align: center;
+}
+#footer {
+  background-color: #fefefe;
+}
+#footer div {
+  flex: 1;
+}
+#footer .footernav {
+  padding: 0.26666667rem 0.4rem;
+  display: flex;
+}
+#footer .footernav h2 {
+  color: #de4b2d;
+}
+#footer .footernav p {
+  color: #a2a2a2;
+}
+#footer .Customer {
+  display: flex;
+  align-items: center;
+}
+#footer .Customer a {
+  display: block;
+  width: 2.26666667rem;
+  text-decoration: none;
+  color: #a0a3a3;
+  text-align: center;
+  position: relative;
+}
+#footer .Customer .customer:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -0.13333333rem;
+  left: 0.06666667rem;
+  width: 0.61333333rem;
+  height: 0.61333333rem;
+  background: url(../img/ic_zixun.png) no-repeat;
+}
+#footer .Customer .sign {
+  background-color: #4fa3fe;
+  color: #fff;
+  line-height: 1.22666667rem;
+  border-radius: 0.2rem;
+}
